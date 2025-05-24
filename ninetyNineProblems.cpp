@@ -2,8 +2,8 @@
 
 using namespace std;
 
-void p001(vector<string> list){
-  cout << list[list.size()-1] + "\n";
+void p001(vector<string> vec){
+  cout << vec[vec.size()-1] + "\n";
 }
 
 int main(){
