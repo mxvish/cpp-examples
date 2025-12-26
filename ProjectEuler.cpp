@@ -9,12 +9,33 @@ void p001(int max) {
       sum += i;
     }
   }
-  cout << sum;
-  cout << "\n";
+  cout << sum << "\n";
+}
+
+/*
+Multiples of 3 under 10
+= 3+6+9
+= 3(1+2+3)
+= 3(sigma((10-1)/3))
+
+Sum of all intergers between 1 and x is x(x+1)/2
+*/
+long long returnSum(int k, int max) {
+  long long n = (max - 1) / k;
+  return k * (n * (n + 1)) / 2;
+}
+
+void solveEuler001(int max) {
+  cout << returnSum(3,max) +
+          returnSum(5,max) -
+          returnSum(15,max) <<
+          "\n";
 }
 
 int main(){
   p001(10);
   p001(1000);
+  solveEuler001(10);
+  solveEuler001(1000);
   return 0;
 }
