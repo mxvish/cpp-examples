@@ -32,10 +32,29 @@ void solveEuler001(int max) {
           "\n";
 }
 
+void p002(int max) {
+  int a = 0;
+  int b = 1;
+  int sum = 0;
+  int sumOfEven = 0;
+
+  for (int sum=0; sum<max; sum++) {
+    sum = a + b;
+    a = b;
+    b = sum; 
+    if (sum%2==0) {
+      sumOfEven += sum;
+    }
+  }
+  cout << sumOfEven << "\n";
+}
+
 int main(){
   p001(10);
   p001(1000);
   solveEuler001(10);
   solveEuler001(1000);
+  p002(90);
+  p002(4e6);
   return 0;
 }
