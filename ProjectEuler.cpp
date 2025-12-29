@@ -33,14 +33,13 @@ void solveEuler001(int max) {
 }
 
 void p002(int max) {
-  int a = 1;
-  int b = 2;
-  int sum = 0;
-  int sumOfEven = 0;
+  unsigned long long a = 1;
+  unsigned long long b = 2;
+  unsigned long long sum = 0;
+  unsigned long long sumOfEven = 0;
 
   while (b<max) {
     if (b%2==0) {
-      cout << b << "\n";
       sumOfEven += b;
     }
     sum = a + b;
