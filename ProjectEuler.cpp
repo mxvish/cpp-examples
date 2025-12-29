@@ -1,3 +1,10 @@
+/*
+References:
+https://projecteuler.net/archives
+https://www.hackerrank.com/contests/projecteuler/challenges
+https://euler.stephan-brumme.com/
+*/
+
 #include <iostream>
 
 using namespace std;
