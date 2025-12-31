@@ -6,6 +6,7 @@ https://euler.stephan-brumme.com/
 */
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -56,12 +57,41 @@ void p002(int max) {
   cout << sumOfEven << "\n";
 }
 
+void p003(long n) {
+  int div = 2;
+  vector<int> factors;
+  while (div <= n) {
+  //while (div ^ 2 < n) {
+    /*for (int i=0; i<factors.size(); i++) {
+      //cout << factors[i] << "\n";
+      if (div % factors[i]==0) {
+        continue;
+      }*/
+    if (n % div ==0) {
+      factors.push_back(div);
+      n = n/div;
+      //cout << div ^ 2 << "\n";
+    }
+    if (div == 2) {
+      div++;
+    } else {
+      div += 2;
+    }
+  }
+  for (int i=0; i<factors.size(); i++) {
+      cout << factors[i] << "\n";
+  }
+}
+
 int main(){
   p001(10);
   p001(1000);
   solveEuler001(10);
   solveEuler001(1000);
+
   p002(10);
   p002(4e6);
+
+  p003(13195);
   return 0;
 }
