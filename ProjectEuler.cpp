@@ -62,7 +62,6 @@ int main(){
   solveEuler001(10);
   solveEuler001(1000);
   p002(10);
-  //p002(100);
   p002(4e6);
   return 0;
 }
