@@ -6,7 +6,6 @@ https://euler.stephan-brumme.com/
 */
 
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -58,29 +57,14 @@ void p002(int max) {
 }
 
 void p003(long n) {
-  int div = 2;
-  vector<int> factors;
-  while (div <= n) {
-  //while (div ^ 2 < n) {
-    /*for (int i=0; i<factors.size(); i++) {
-      //cout << factors[i] << "\n";
-      if (div % factors[i]==0) {
-        continue;
-      }*/
+  for (unsigned long long div=2; div * div <= n; div++) {
     if (n % div ==0) {
-      factors.push_back(div);
-      n = n/div;
-      //cout << div ^ 2 << "\n";
-    }
-    if (div == 2) {
-      div++;
-    } else {
-      div += 2;
+      while (n % div ==0 && n != div) {
+        n /= div;
+      }
     }
   }
-  for (int i=0; i<factors.size(); i++) {
-      cout << factors[i] << "\n";
-  }
+  cout << n << "\n";
 }
 
 int main(){
@@ -93,5 +77,6 @@ int main(){
   p002(4e6);
 
   p003(13195);
+  p003(600851475143);
   return 0;
 }
