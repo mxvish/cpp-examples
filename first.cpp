@@ -41,8 +41,7 @@ class MySuperClass: public MyClass {
 };
 
 int main() {
-  cout << "cpp!";
-  cout << "\n";
+  cout << "cpp!" << "\n";
   string str = "String in cpp";
   
   MyClass myClass;
