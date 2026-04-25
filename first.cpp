@@ -58,7 +58,7 @@ int main() {
   unique_ptr<MyClass> ptrMyClass(new MyClass); //smart pointers
   cout << ptrMyClass->str;
   cout << "\n";
-  cout << 3;
+  cout << 3 + 3;
   cout << "\n";
 
   return 0;
