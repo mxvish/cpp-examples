@@ -20,13 +20,11 @@ class MyClass {
     }
 
     void myMethod() {
-        cout << "myMethod in MyClass";
-        cout << "\n";
+        cout << "myMethod in MyClass"<< "\n";
     }
     
     void myMethod(int n) {
-        cout << n;
-        cout << "\n";
+        cout << n<< "\n";
     }
 };
 
@@ -35,8 +33,7 @@ class MySuperClass: public MyClass {
     string str = "MySuperClass";
 
     void myMethod() {
-        cout << "myMethod in MySuperClass";
-        cout << "\n";
+        cout << "myMethod in MySuperClass"<< "\n";
     }
 };
 
@@ -55,10 +52,8 @@ int main() {
   delete myPointer;
   
   unique_ptr<MyClass> ptrMyClass(new MyClass); //smart pointers
-  cout << ptrMyClass->str;
-  cout << "\n";
-  cout << 3 + 3;
-  cout << "\n";
+  cout << ptrMyClass->str << "\n";
+  cout << 3 + 3 << "\n";
 
   return 0;
 }
