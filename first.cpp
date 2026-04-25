@@ -9,7 +9,7 @@ class MyClass {
   float floatVariable;
 
   public:
-    string str = "String in MyClass";
+    string str = "MyClass";
 
     MyClass() {
       // constructor
@@ -20,7 +20,7 @@ class MyClass {
     }
 
     void myMethod() {
-        cout << "String in myMethod in MyClass";
+        cout << "myMethod in MyClass";
         cout << "\n";
     }
     
@@ -32,10 +32,10 @@ class MyClass {
 
 class MySuperClass: public MyClass {
   public:
-    string str = "String in MySuperClass";
+    string str = "MySuperClass";
 
     void myMethod() {
-        cout << "String in myMethod in MySuperClass";
+        cout << "myMethod in MySuperClass";
         cout << "\n";
     }
 };
