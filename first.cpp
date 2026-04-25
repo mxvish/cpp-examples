@@ -9,8 +9,8 @@ class MyClass {
   float floatVariable;
 
   public:
-
     string str = "String in MyClass";
+
     MyClass() {
       // constructor
     }
