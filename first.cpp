@@ -51,7 +51,7 @@ int main() {
   MyClass* myPointer = new MyClass;
   delete myPointer;
   
-  unique_ptr<MyClass> ptrMyClass(new MyClass); //smart pointers
+  unique_ptr<MyClass> ptrMyClass(new MyClass); /*smart pointers*/
   cout << ptrMyClass->str << "\n";
   cout << 3 + 3 << "\n";
 
