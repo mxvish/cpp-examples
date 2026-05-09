@@ -53,7 +53,9 @@ int main() {
   
   unique_ptr<MyClass> ptrMyClass(new MyClass); /*smart pointers*/
   cout << ptrMyClass->str << "\n";
-  cout << 3 + 3 << "\n";
+  int a = 3;
+  int b = 3;
+  cout << a + b << "\n";
 
   return 0;
 }
